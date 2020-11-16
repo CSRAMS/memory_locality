@@ -6,4 +6,5 @@ The languages measured include:
 - Java
 - Python
 - Javascript
+- C
 - ...
