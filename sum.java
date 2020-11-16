@@ -24,7 +24,7 @@ public class sum{
       for(j=0; j<N; j++)
 	sum+= array[i][j];
   final long duration = System.nanoTime()-startTime;
-   System.out.println("It takes " + duration + " seconds " );
+   System.out.println("It takes " + duration + " seconds and the sum is " + sum );
   }
 
   public void secondSum(){
@@ -34,7 +34,7 @@ public class sum{
       for(i=0; i<M; i++)
 	sum+= array[j][i];
   final long duration = System.nanoTime()-startTime;
-   System.out.println("It takes " + duration + " seconds ");
+   System.out.println("It takes " + duration + " seconds and the sums is " + sum );
   }
 }
 
