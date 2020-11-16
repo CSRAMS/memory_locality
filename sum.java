@@ -1,34 +1,40 @@
+import java.lang.*;
 public class sum{
 
     public static final int  N = 1024;
     public static final int  M = 1024;
+   public static int i,j; public static int sum =0;
+    public static int [][] array =  new int [M][N];
+	public sum(){
 
-public static void main (String[] args){
-	int i,j; int sum =0;
-	int [][] array = new int [M][N];
-	//clock function in c
+	}
+  public static void main (String[] args){
 
 	for(i=0; i<M; i++)
 	   for(j=0; j<N; j++)
-		array[M][N] = 1;
+		array[i][j] = 1;
+ 	sum s = new sum();
+		s.firstSum();
+		s.secondSum();
 	}
-  }
-   public firstSum(){
-  //clock start function in c
+  
+   public void firstSum(){
+  final long startTime = System.nanoTime();
    for(i=0; i<M; i++)
       for(j=0; j<N; j++)
-	sum+= array[M][N];
- //clock end fucntion in c
-   System.out.println("It takes " + " seconds and the sum is " + );
+	sum+= array[i][j];
+  final long duration = System.nanoTime()-startTime;
+   System.out.println("It takes " + duration + " seconds " );
   }
 
-  public secondSum(){
+  public void secondSum(){
  sum = 0;
- //clock start function in c
-   for(j=o; j<N; j++)
+  final long startTime = System.nanoTime();
+   for(j=0; j<N; j++)
       for(i=0; i<M; i++)
-	sum+= array[N][M];
- //clock end fucntion in c
-   System.out.println("It takes " + " seconds and the sum is " +);
+	sum+= array[j][i];
+  final long duration = System.nanoTime()-startTime;
+   System.out.println("It takes " + duration + " seconds ");
   }
+}
 
